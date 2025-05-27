@@ -24,6 +24,7 @@ namespace apptienda.Controllers
             return View();
         }
 
+        [HttpPost] 
         public IActionResult Calculo(Calculo calc)
         {
             if (ModelState.IsValid)
@@ -43,7 +44,7 @@ namespace apptienda.Controllers
                 }
                 ViewData["Resultado"] = mensaje;
             }
-            return View();
+            return View("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
