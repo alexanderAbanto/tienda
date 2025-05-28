@@ -28,7 +28,7 @@ namespace apptienda.Controllers
         {
             if (ModelState.IsValid)
             {
-                ViewData["Message"] = "Se registro el contacto";
+                ViewData["Message"] = "Se registro el  contacto";
             }
             return View("Index");
         }
